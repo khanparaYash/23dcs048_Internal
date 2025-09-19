@@ -9,19 +9,16 @@ function Home() {
   const navigate = useNavigate();
   useEffect(()=>{
     if(!isAuthenticated){
-        navigate("login")
+        navigate("/login")
     }
-  })
+  },[isAuthenticated, navigate])
 
   const handleLogout = () => {
     dispatch(logout());
     navigate("/login");
   };
 
-  if (!isAuthenticated) {
-    navigate("/login");
-    return null;
-  }
+  
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
