@@ -31,7 +31,6 @@ function Register() {
         <h2 className="text-3xl font-bold text-center mb-6">Register</h2>
 
         <form onSubmit={handleSubmit} className="space-y-5">
-          {/* Name Input */}
           <input
             type="text"
             placeholder="Enter your name"
@@ -42,7 +41,6 @@ function Register() {
             className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />
 
-          {/* Email Input */}
           <input
             type="email"
             placeholder="Enter your email"
@@ -53,7 +51,6 @@ function Register() {
             className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />
 
-          {/* Password Input */}
           <input
             type="password"
             placeholder="Enter your password"
@@ -64,7 +61,6 @@ function Register() {
             className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />
 
-          {/* Submit Button */}
           <button
             type="submit"
             disabled={loading}
@@ -74,7 +70,6 @@ function Register() {
           </button>
         </form>
 
-        {/* Login Link */}
         <p className="text-sm text-gray-400 text-center mt-6">
           Already have an account?{" "}
           <Link

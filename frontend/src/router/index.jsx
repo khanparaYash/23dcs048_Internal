@@ -15,17 +15,17 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: (
-          <PublicRoute>
+        //   <PublicRoute>
             <Login />
-          </PublicRoute>
+        //   </PublicRoute>
         ),
       },
       {
         path: "register",
         element: (
-          <PublicRoute>
+        //   <PublicRoute>
             <Register />
-          </PublicRoute>
+        //   </PublicRoute>
         ),
       },
     ],
